@@ -12,7 +12,7 @@ require 'haml_coffee_assets/compiler'
 
 require 'haml_coffee_assets/tilt/template_handler'
 
-if defined?(Rails)
+if defined?(Rails) && defined?(Rails::Engine)
   require 'rails'
   require 'haml_coffee_assets/rails/engine'
 else
